@@ -1,0 +1,12 @@
+#!/bin/bash
+sudo apt-get update
+sudo apt-get --assume-yes install libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev
+sudo mkdir bluez
+cd bluez
+sudo wget www.kernel.org/pub/linux/bluetooth/bluez-5.11.tar.xz
+sudo unxz bluez-5.11.tar.xz
+sudo tar xvf bluez-5.11.tar
+cd bluez-5.11
+sudo ./configure --disable-systemd
+sudo make
+sudo make install
