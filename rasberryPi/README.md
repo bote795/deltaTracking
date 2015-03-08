@@ -1,4 +1,4 @@
-This file is for creating a rasberry pi runing rasberian to a iBeacon.
+Tis file is for creating a rasberry pi runing rasberian to a iBeacon.
 Needs
 	Rasberry pi 
 	bluetooth 4.0 toogle
@@ -14,3 +14,4 @@ chmod +x startbeacon.sh
 this will run the beacon
 
 https://learn.adafruit.com/pibeacon-ibeacon-with-a-raspberry-pi/setting-up-the-pi
+http://getpocket.com/redirect?url=http%3A%2F%2Fwww.havlena.net%2Fen%2Flocation-technologies%2Fibeacons-how-do-they-technically-work%2F
