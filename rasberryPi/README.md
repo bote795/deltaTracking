@@ -22,7 +22,28 @@ after everything fully installed
 >
 > ./startbeacon.sh
 
-this will run the beacon
+the above will make the beacon start broadcasting if no errors happened
+#change this depending on your app
+following line is from startbeacon.sh line 7
+>UUID  B9407F30-F5F8-466E-AFF9-25556B57FE6D  this is for this app
+>is an identifier that distinguishes your iBeacons from the others. Your mobile app is then set up to listen just to this proximity UUID.
+>
+>0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 B9 40 7F 30 F5 F8 46 6E AF F9 25 55 6B 57 FE 6D 00 00 00 00 C8 00 
+>
 
+The following comes  from above
+
+> 02 01 1A 1A FF 4C 00 02 15 iBeacon prefix
+>
+>
+>B9 40 7F 30 F5 F8 46 6E AF F9 25 55 6B 57 FE 6D Proximity UUID 
+>
+>00 00 	this is major
+>
+>00 00 		 this is minor
+
+#for more information
+information on detail beacon setup
 https://learn.adafruit.com/pibeacon-ibeacon-with-a-raspberry-pi/setting-up-the-pi
-http://getpocket.com/redirect?url=http%3A%2F%2Fwww.havlena.net%2Fen%2Flocation-technologies%2Fibeacons-how-do-they-technically-work%2F
+information on how the ibeacon packet consists of
+http://www.havlena.net/en/location-technologies/ibeacons-how-do-they-technically-work/
