@@ -23,7 +23,7 @@ after everything fully installed
 > ./startbeacon.sh
 
 the above will make the beacon start broadcasting if no errors happened
-#change this depending on your app
+##change this depending on your app
 following line is from startbeacon.sh line 7
 >UUID  B9407F30-F5F8-466E-AFF9-25556B57FE6D  this is for this app
 >is an identifier that distinguishes your iBeacons from the others. Your mobile app is then set up to listen just to this proximity UUID.
@@ -41,8 +41,15 @@ The following comes  from above
 >00 00 	this is major
 >
 >00 00 		 this is minor
+###Explanation
 
-#for more information
+Proximity UUID – is an identifier that distinguishes your iBeacons from the others. Your mobile app is then set up to listen just to this proximity UUID.
+
+Major  – is used to group a related set of iBacons.
+
+Minor  – is used to identify individual iBeacons
+
+##for more information
 information on detail beacon setup
 https://learn.adafruit.com/pibeacon-ibeacon-with-a-raspberry-pi/setting-up-the-pi
 information on how the ibeacon packet consists of
