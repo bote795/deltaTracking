@@ -41,6 +41,7 @@ The following comes  from above
 >00 00 	this is major
 >
 >00 00 		 this is minor
+
 ###Explanation
 
 Proximity UUID – is an identifier that distinguishes your iBeacons from the others. Your mobile app is then set up to listen just to this proximity UUID.
